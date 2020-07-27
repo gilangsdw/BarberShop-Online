@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="-2dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/haircut"
+                android:layout_marginBottom="12dp">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tvlogo"
+                android:text="Barbershop Online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img1"
+                android:textSize="23dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="75dp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        app:boxCornerRadiusTopStart="13dp"
+                        app:boxCornerRadiusTopEnd="13dp"
+                        app:boxCornerRadiusBottomEnd="13dp"
+                        app:boxCornerRadiusBottomStart="13dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_below="@id/tvlogo"
+                        android:id="@+id/userLogp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Username">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/userLog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_below="@id/userLogp"
+                        app:boxCornerRadiusTopStart="13dp"
+                        app:boxCornerRadiusTopEnd="13dp"
+                        app:boxCornerRadiusBottomEnd="13dp"
+                        app:boxCornerRadiusBottomStart="13dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:id="@+id/passwordLogp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        app:endIconMode="password_toggle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/passwordLog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:textSize="18dp"
+                        android:text="Login"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="150dp"
+                        android:layout_below="@id/passwordLogp">
+                    </Button>
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:layout_below="@id/btnLogin"
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Don't have an account ? "
+                        android:textColor="#616161"
+                        android:fontFamily="@font/asap_regular"/>
+
+                    <Button
+                        android:id="@+id/btnSign"
+                        android:textSize="18dp"
+                        android:text="Sign Up"
+                        android:textColor="#616161"
+                        android:textAllCaps="false"
+                        android:layout_below="@id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn1"
+                        android:layout_centerInParent="true">
+                    </Button>
+
+                    <TextView
+                        android:layout_below="@id/btnSign"
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Forget your password?"
+                        android:textStyle="bold"
+                        android:textColor="#616161"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/asap_regular"
+                        />
+
+
+</RelativeLayout>

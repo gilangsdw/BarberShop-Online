@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Username anda : " />
+
+    <TextView
+        android:id="@+id/usernameMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama anda : " />
+
+    <TextView
+        android:id="@+id/namaMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/hair1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hair2" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/hair2"
+        android:layout_below="@id/hair1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hair2"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/hair3"
+        android:layout_below="@id/hair2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hair2"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/hair4"
+        android:layout_toRightOf="@id/hair1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hair2"/>
+</RelativeLayout>
